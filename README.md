@@ -22,8 +22,8 @@
 | 编号 | 主题 | 状态 | 核心内容 |
 |------|------|------|---------|
 | [01](./01-minimal-agent) | Minimal Agent | ✅ 完成 | 手写 Agent 循环、工具注册、多 LLM、运行日志 |
-| [02](./02-mcp-agent) | MCP Agent | 🚧 进行中 | 用 MCP 协议动态加载工具，替代本地写死 |
-| 03 | Multi-Agent | 📅 计划 | Planner / Executor / Evaluator 协作 |
+| [02](./02-mcp-agent) | MCP Agent | ✅ 完成 | 用 MCP 协议动态加载工具，替代本地写死 |
+| 03 | Multi-Agent | 🚧 进行中 | Planner / Executor / Evaluator 协作 |
 | 04 | Agent Toolkit | 📅 计划 | 可复用的 Agent 工程模块 |
 | 05 | Agent Eval | 📅 计划 | 评估体系：成功率、成本、延迟 |
 
