@@ -1,0 +1,177 @@
+# ============================================
+# 环境变量 / 密钥（最重要，绝对不能提交）
+# ============================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+.venv/
+venv/
+ENV/
+env/
+.python-version.bak
+
+# 测试 / 覆盖率
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+.cache
+workspace/
+
+# 类型检查 / lint
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ============================================
+# uv
+# ============================================
+# 注意：uv.lock 要提交，不要忽略
+# 只忽略 uv 的缓存
+.uv/
+uv-cache/
+
+# ============================================
+# Node.js / Next.js
+# ============================================
+node_modules/
+.next/
+out/
+.nuxt/
+dist/
+*.tsbuildinfo
+.npm
+.yarn/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ============================================
+# Go
+# ============================================
+# 编译产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+bin/
+vendor/
+
+# Go 工作区
+go.work
+go.work.sum
+
+# ============================================
+# Serverless / 部署
+# ============================================
+.vercel/
+.serverless/
+.aws-sam/
+cdk.out/
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+
+# ============================================
+# IDE / 编辑器
+# ============================================
+# VS Code（保留团队共享配置）
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Cursor（个人配置不提交，rules 要提交）
+.cursor/*
+!.cursor/rules/
+
+# ============================================
+# 操作系统
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# 日志 / 临时文件
+# ============================================
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# ============================================
+# 数据 / 模型产物（视情况调整）
+# ============================================
+# Agent 运行产生的中间数据
+data/
+outputs/
+*.sqlite
+*.db
+# 如果你要提交示例数据，用 ! 例外
+!data/.gitkeep
+!outputs/.gitkeep
