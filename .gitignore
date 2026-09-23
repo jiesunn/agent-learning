@@ -138,9 +138,8 @@ cdk.out/
 *.swo
 *~
 
-# Cursor（个人配置不提交，rules 要提交）
-.cursor/*
-!.cursor/rules/
+# Zcode
+.zcodeignore
 
 # ============================================
 # 操作系统
