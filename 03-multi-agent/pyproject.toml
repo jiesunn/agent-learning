@@ -1,0 +1,38 @@
+[project]
+name = "03-multi-agent"
+version = "0.1.0"
+description = "Planner / Executor / Evaluator multi-agent orchestration with explicit state machine"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=2.2.0",
+    "openai>=3.17.0",
+    "python-dotenv>=1.2.3",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[[tool.uv.index]]
+url = "https://uv.agentsmirror.com/pypi/simple"
+default = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# package = false，所以项目根目录不在 sys.path 上，测试 import multi_agent 会失败
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+# UP009：01/02 全仓库都用 `# coding: utf-8` 头，保持一致，不为了 lint 好看改掉
+ignore = ["E501", "UP009"]
